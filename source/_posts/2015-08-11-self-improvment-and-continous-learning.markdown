@@ -42,7 +42,7 @@ Some useful links :
 
 Next greatest source of knowledge are books. Books that are written by specialists and people who did experience a lot in their career. Even knowledge from books written long time ago (like 15-20 years ago) is still party valid and you can learn a lot from them. Of course you should choose a book wisely. Worth recommending authors are Robert C. Martin, Kent Beck, Martin Fowler, Joshua Bloch, Michael Feathers and many more...
 
--> {% img center-displayed /images/books.jpeg 400 200 'image' 'images' %} <-
+-> {% img center-displayed /images/books.jpeg 400 250 'image' 'images' %} <-
 
 Books that you should read :
 
@@ -107,9 +107,11 @@ The second, active option, that involve talking to the people, is becoming one o
 Conferences
 ---------------------
 
--> {% img center-displayed /images/conf.jpg 600 300 'image' 'images' %} <-
+Conferences are like meetups, but bigger and longer. Many interesting presentations are divided into multiple related tracks like: JVM, architecture, agile or security. There is a catch. You need to beware of topics that may seem interesting, but in fact, are not. Second catch: inexperienced speakers. There is a chance, that you are going to suffer on their presentations. On so huge events as conferences you meet and talk with many people, exchange experiences, learn something new and learn it nicely. You can also meet more well known people from around the world, like some java gurus/rock stars.
 
-Conferences are like meetups, but bigger and longer. Many interesting presentations are divided into multiple related tracks like: JVM, architecture, agile or security. There is a catch. You need to beware of topics that may seem interesting, but in fact, are not. Second catch: inexperienced speakers. There is a chance, that you are going to suffer on their presentations. On so huge events as conferences you meet and talk with many people, exchange experiences, learn something new and learn it nicely. You can also meet more well known people from around the world, like some java gurus/rock stars. Besides normal presentations, on most of the conferences, you can sign up for workshops where you can learn some practical skills. The major difference between big events and local meetups is that conferences are in most cases not for free. It means that the speaker’s level of experience should be higher – his proposed presentation goes through a broader group of reviewers. You can start with little goals. The time of being a star will come. Don’t forget, that even  on a “free conference” you need to sleep somewhere and get there somehow.
+-> {% img center-displayed /images/conf.jpg 600 500 'image' 'images' %} <-
+
+Besides normal presentations, on most of the conferences, you can sign up for workshops where you can learn some practical skills. The major difference between big events and local meetups is that conferences are in most cases not for free. It means that the speaker’s level of experience should be higher – his proposed presentation goes through a broader group of reviewers. You can start with little goals. The time of being a star will come. Don’t forget, that even  on a “free conference” you need to sleep somewhere and get there somehow.
 
 
 
@@ -133,9 +135,11 @@ If you want to be a writer, you must do two things above all others: read a lot 
 Summary
 ---------------------
 
--> {% img center-displayed /images/unclebob.jpg 600 400 'image' 'images' %} <-
+When I was on this year Geecon, great conference in Cracow, on the second day closing speech gave Grant Ingersoll. Grant Ingersoll is co-founder of LucidWorks and Apache Mahout. His great speech was about how to determine what really is important in our work. We should focus on exploring new technologies and learn skills which help us better understand new problems and challenges.  We need learn things that are important now and in the future (like big data, data analytics, distributed systems and many more). 
 
-When I was on this year Geecon, great conference in Cracow, on the second day closing speech gave Grant Ingersoll. Grant Ingersoll is co-founder of LucidWorks and Apache Mahout. His great speech was about how to determine what really is important in our work. We should focus on exploring new technologies and learn skills which help us better understand new problems and challenges.  We need learn things that are important now and in the future (like big data, data analytics, distributed systems and many more). Our job is strongly forcing us to learn new things. We cannot stay on the same level of our career forever. We choose that path to be awesome software engineers. It is my way of dealing with this and I hope it will be yours as well. Pick one little idea from this blog post and start being better at what you do. Just do it!
+-> {% img center-displayed /images/unclebob.jpg 600 500 'image' 'images' %} <-
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/nuHfVn_cfHU" frameborder="0" allowfullscreen></iframe>
+Our job is strongly forcing us to learn new things. We cannot stay on the same level of our career forever. We choose that path to be awesome software engineers. It is my way of dealing with this and I hope it will be yours as well. Pick one little idea from this blog post and start being better at what you do. Just do it!
+
+<iframe width="760" height="455" src="https://www.youtube.com/embed/nuHfVn_cfHU" frameborder="0" allowfullscreen></iframe>
 
