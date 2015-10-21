@@ -16,6 +16,8 @@ categories: [java, jboss, jms, metrics]
 
 We could also create triggers for the purpose of alerting us when there are no consumers for the queue. This could easily end up with queue swelling thousands of messages. We will use Dropwizard Metrics library which is very nice and easy for gathering and measuring data in our application. We will expose this data through REST as JSON. We won't rely on JMX protocol because protocol used for providing data for monitoring should be technology agnostic. While providing data for monitoring system, we should use standard protocol for every technology, in our case, it will be HTTP.
 
+[Full application source code](http://github.com/nikom1337/jms-queue-monitoring)
+
 Introducing  Metrics
 ---------------------
 
@@ -248,23 +250,23 @@ The final result
 
 Fire up WildFly server. Compile code. Package into war and deploy. Now we can test our metrics endpoint in a browser that we defined in web.xml. After that we receive JSON with our statistics of queues. This JSON can be consumed by various monitoring systems like Zabbix or Nagios.
 
-[~] curl -XGET http://localhost:8080/appname.war/monitoring?pretty=true
+[~] curl -XGET http://localhost:8080/jms-monitoring-example-1.0-SNAPSHOT/monitoring
 
 {% codeblock lang:json %}
 {
     "version": "3.0.0",
     "gauges": {
 		"jms.queue.exampleQueue1.messageCount": {
-		    "value": 0
+		    "value": 10
 		},
 		"jms.queue.exampleQueue1.messagesAdded": {
-		    "value": 0
+		    "value": 10
 		},
 		"jms.queue.exampleQueue2.messageCount": {
-		    "value": 0
+		    "value": 5
 		},
 		"jms.queue.exampleQueue2.messagesAdded": {
-		    "value": 0
+		    "value": 5
 	    }
     },
     "counters": { },
