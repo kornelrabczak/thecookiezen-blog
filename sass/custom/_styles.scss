@@ -608,7 +608,7 @@ article {
   p {
     @extend .default-line-height;
     @extend .margin-bottom-large;
-    text-align: left;
+    text-align: justify;
 
     a {
       text-decoration: underline;
@@ -867,4 +867,22 @@ article {
       }
     }
   }
+}
+
+#background-video {
+    background-repeat: no-repeat;
+    padding: 50px;
+}
+
+#vidwrap {
+    background: url('http://www.edu.uwo.ca/img/click_to_play.png') no-repeat center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow:hidden;
+    background-repeat: no-repeat;
+    width:480px;
+    height:360px;
+    cursor:pointer;
 }

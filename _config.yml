@@ -4,7 +4,7 @@
 
 url: http://thecookiezen.com
 title: thecookiezen blog
-subtitle: java inside you. 
+subtitle:
 author: Korneliusz Rabczak
 simple_search: https://www.google.com/search
 description: java programming it blog software
@@ -98,4 +98,4 @@ disqus_show_comment_count: true
 google_analytics_tracking_id: UA-66056313-1
 
 # Facebook Like
-facebook_like: false
+facebook_like: true

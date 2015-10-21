@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "subscribe"
+title: "subscribe for newsletter"
 date: 2015-08-10 19:12
 comments: false
 sharing: false
