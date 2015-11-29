@@ -10,7 +10,7 @@ categories: [java, patterns, microservices]
 
 -> {% img center-displayed /images/circuitbreaker.jpeg 'image' 'images' %} <-
 
- In time of microservices, it's relevant how we think about securing remote communication between multiple applications and how we react on network/application failure as a client. If our application depends on many external services and communicates with them remotely, it should be protected in case of network problems or unavailability of the application. One of the basic solution is to use CircuitBreaker pattern, you can find more detailed description on Martin Fowler website [http://martinfowler.com/bliki/CircuitBreaker.html](http://martinfowler.com/bliki/CircuitBreaker.html).
+ In time of microservices, it's relevant how we think about securing remote communication between multiple applications and how we react on network/application failure as a client. If our application depends on many external services and communicates with them remotely, it should be protected in case of network problems or unavailability of the application. One of the basic solutions is to use CircuitBreaker pattern, you can find more detailed description on Martin Fowler's website [http://martinfowler.com/bliki/CircuitBreaker.html](http://martinfowler.com/bliki/CircuitBreaker.html).
 
 <!-- more -->
 
@@ -26,7 +26,7 @@ CircuitBreaker advantages :
 Implementing simple CircuitBreaker
 ---------------------
 
-I want to share with you my implementation of CircuitBreaker which is based on Hystrix library from Netflix. It's not full CircuitBreaker due to missing HALF-OPEN state. Also my implementation depends on Hystrix implementation of Sliding Windoow algorithm for measuring circuit health. Maybe it's little overhead to use the whole library from Netflix, but this is just example. If i find some spare time, I will implement some simpler solution to get rid of Hystrix dependence and decrease coupling. But this is simple, thread-safe and technology agnostic example which you can use in standard JAVA applications and also in JAVA EE applications.
+I want to share with you my implementation of CircuitBreaker which is based on Hystrix library from Netflix. It's not full CircuitBreaker due to missing HALF-OPEN state. Also my implementation depends on Hystrix implementation of Sliding Window algorithm for measuring circuit health. Maybe it's little overhead to use the whole library from Netflix, but this is just example. If i find some spare time, I will implement some simpler solution to get rid of Hystrix dependence and decrease coupling. But this is simple, thread-safe and technology agnostic example which you can use in standard JAVA applications and also in JAVA EE applications.
 
 Circuit core
 ---------------------
@@ -75,7 +75,7 @@ public class CircuitBreaker {
 }
 {% endcodeblock %}
 
-In contructor we are passing closeCircuitDelay and closeCircuitDelayTimeUnit variables defining after which time circuit should be once again closed after opening. Also we pass HealthConfiguration instance that stores configuration for circuitBreakerHealth instance. We can configure conditions like :
+In constructor we are passing closeCircuitDelay and closeCircuitDelayTimeUnit variables defining after a certain time circuit should be once again closed after opening. Also we pass HealthConfiguration instance that stores configuration for circuitBreakerHealth instance. We can configure conditions like :
 
 *   errorThresholdPercentage - the percentage threshold of errors
 *   requestVolumeThreshold - the minimum number of request in specified time window
