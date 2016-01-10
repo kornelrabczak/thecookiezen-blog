@@ -3,7 +3,7 @@ layout: post
 title: "WildFly-Swarm - New player in microservices world"
 date: 2016-01-10 17:43:04 +0100
 comments: true
-description: JDD 2015 - Solutions worth adopting
+description: WildFly-Swarm - New player in microservices world
 keywords: wildfly, jboss, microservices, swarm, java, javaee
 categories: [java, wildfly, microservices, javaee]
 ---
