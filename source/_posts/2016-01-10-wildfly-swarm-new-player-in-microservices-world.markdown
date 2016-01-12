@@ -14,7 +14,7 @@ Earlier in 2015 Red Hat made initial release of their new project called WildFly
 
 <!-- more -->
 
-WildFly-Swarm is decomposed into small modules with a good separation of concerns. With those modules we can fit server dependencies to our own requirements. Besides standard modules, there are a few modules which can help you maintaining your applications and integrate them into your environment. For example Jokolia used to exposing JMX data as JSON over HTTP for monitoring purpose or Netflix Ribbon which is for software load balancing. With WildFly-Swarm we have all JavaEE toolkit setup and standardization, which has a big impact on the application maintenance. Additionally, we can test our application using Arquillian adapter, which helps us test code from outside and inside of the running application.
+WildFly-Swarm is decomposed into small modules with a good separation of concerns. With those modules we can fit server dependencies to our own requirements. Besides standard modules, there are a few modules which can help you maintaining your applications and integrate them into your environment. For example Jolokia used to exposing JMX data as JSON over HTTP for monitoring purpose or Netflix Ribbon which is for software load balancing. With WildFly-Swarm we have all JavaEE toolkit setup and standardization, which has a big impact on the application maintenance. Additionally, we can test our application using Arquillian adapter, which helps us test code from outside and inside of the running application.
 
 Full modules list :
 
