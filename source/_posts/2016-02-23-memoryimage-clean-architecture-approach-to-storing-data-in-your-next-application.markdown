@@ -23,7 +23,7 @@ I took part in multiple projects where choosing database was the first decision 
 Clean Architecture and Prevayler
 ---------------------
 
-Now you already know about deferring decision of choosing a database and you wonder how we can achieve this goal. We can try to keep everything in files on disk or Maps in the memory. Those are easy things, but how we provide persistence of maps between application restarts ? There is an old pattern called Prevayler or MemoryImage. You can find more detailed description on [Martin Fowler's site](http://martinfowler.com/bliki/MemoryImage.html). The main idea is to keep everything in memory and make periodically snapshots of objects that need to be persisted. Snapshots are made at short intervals of time to prevent losing data. Between snapshots, there is the events log that keeps every action of our persisted object (in case of map will be put/remove/etc) logged in specified file. When we restart our application, the first from all data: snapshot is loaded. Then, all transactions on last snapshot from events log are replied to keep consistence. All operations are mode on objects in memory.  Such solution leads to lack of need Session, EntityManager, complicated entities relationships, DB deadlocks. The problems related to ORMs are gone.
+Now you already know about deferring decision of choosing a database and you wonder how we can achieve this goal. We can try to keep everything in files on disk or Maps in the memory. Those are easy things, but how we provide persistence of maps between application restarts ? There is an old pattern called Prevayler or MemoryImage. You can find more detailed description on [Martin Fowler's site](http://martinfowler.com/bliki/MemoryImage.html). The main idea is to keep everything in memory and make periodically snapshots of objects that need to be persisted. Snapshots are made at short intervals of time to prevent losing data. Between snapshots, there is the events log that keeps every action of our persisted object (in case of map will be put/remove/etc) logged in specified file. When we restart our application, first of all the snapshot is loaded. Then, all transactions from events log are replied to keep consistence. All operations are made on objects in memory.  Such solution leads to lack of need Session, EntityManager, complicated entities relationships, DB deadlocks. The problems related to ORMs are gone.
 
 Airomem 
 ---------------------
@@ -74,7 +74,7 @@ public class Book implements Serializable {
 }
 {% endcodeblock %}
 
-Next, we create our storage class, that will be Library. All books will be stored in a thread-safe variant of ArrayLis - CopyOnWriteArrayList. Library has methods for creating and fetching books by ISBN, author or title.
+Next, we create our storage class, that will be Library. All books will be stored in a thread-safe variant of ArrayList - CopyOnWriteArrayList. Library has methods for creating and fetching books by ISBN, author or title.
 
 {% codeblock lang:java Library %}
 public class Library implements Serializable {
@@ -83,31 +83,26 @@ public class Library implements Serializable {
 
     private CopyOnWriteArrayList<Book> books = new CopyOnWriteArrayList<>();
 
-    @Override
     public void addNewBook(String title, String author) {
         assert WriteChecker.hasPrevalanceContext();
         final Book book = new Book(UUID.randomUUID().toString(), author, title);
         this.books.add(book);
     }
 
-    @Override
     public Collection<Book> getAll() {
         return this.books;
     }
 
-    @Override
     public Book getByISBN(String ISBN) {
         final Predicate<Book> bookPredicate = b -> b.getISBN().equals(ISBN);
         return this.books.stream().filter(bookPredicate).findAny().get();
     }
 
-    @Override
     public Collection<Book> getByAuthor(String author) {
         final Predicate<Book> bookPredicate = b -> b.getAuthor().equals(author);
         return findByPredicate(bookPredicate);
     }
 
-    @Override
     public Collection<Book> getByTitle(String title) {
         final Predicate<Book> bookPredicate = b -> b.getTitle().equals(title);
         return findByPredicate(bookPredicate);
