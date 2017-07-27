@@ -1,0 +1,126 @@
+---
+layout: post
+title: "Best of GeeCON 2016"
+date: 2016-05-23 18:47:47 +0200
+comments: true
+description: Best of GeeCON 2016
+keywords: jvm, java, conferences, geecon
+categories: [jvm, java, conferences, geecon] 
+---
+
+-> {% img center-displayed /images/geecon.jpg 'image' 'images' %} <-
+
+Last week I had a chance to be for the third time at a Java conference called GeeCON. I really enjoyed this event because of the number of great people and many interesting topics related to the JVM world. By visiting such conferences you can learn new things and get to know the expert’s newest opinions. However, after this event, as always, I have more questions than answers. Some mysterious magic was present there and, as software developer, I feel the need to make this magic disappear. So I have to spend some time reading articles, doing research and experimenting. In this post I want to summarize the best presentations I've been by those 3 days in Cracow.
+
+<!-- more -->
+
+
+DAY 1
+====================
+
+A Decade of DDD, CQRS, Event Sourcing, Greg Young
+---------------------
+
+-> {% img center-displayed /images/img11.jpg 'image' 'images' %} <-
+
+Main topic was about CQRS solution, which shouldn't be a top architecture for your system, but one of the system components. Also important problem was raised concerning people who don’t try to think themselves about things they read. They just strictly keep everything as someone wrote (articles, tutorials, books). For example: not every action/command in CQRS solution should create one event - there can be multiple events. Another incorrect assumption is that command shouldn't have any results. Exception thrown is also the result.
+
+
+The Wix Microservice Stack, Tomer Gabel
+---------------------
+
+Tomer Gabel was talking about microservices solution in his company. He discussed all of the architecture layers, which include topology, infrastructure, load balancing, auto discovery (Zookeeper), deploying and dealing with failures. They use their own deployment application on top of Kubernetes. They like to keep everything simple in Wix - without sophisticated solutions like usage of Hystrix for cascade failures. They just agree to such rare cases. As the IDL they simple use Java interfaces over tools like RAML or Swagger.
+
+
+Rise of the Machines - Automate Your Development, Sven Peters
+---------------------
+
+-> {% img center-displayed /images/bots.jpg 'image' 'images' %} <-
+
+Great talk of Sven Peters the Atlassian evangelist about how they improve development using own bots. All of this for better code quality and make developers more productive. Bots deal with flaky tests detecting, production problems reporter (to inform developers about problems), automatically generating release notes and publishing them, log problems finder (which analyze logs in term of errors/exceptions and send notification on HipChat), stand-up reminder, Hall of Shame/Fame based on what developer has done, automatically managing JIRA issues state based on git actions (like creating new fix/feature branch, commit, pull request and merge to master).
+
+
+Microservices tracing with Spring Cloud and Zipkin, Marcin Grzejszczak
+---------------------
+
+Is was a short example of correlation id in microservices. Marcin showed us how we can track and measure request in our system between our distributed components. All of that requires only spring-cloud-sleuth module, which is integrated with among others HTTP client library, Hystrix, RxJava, so we don't bother ourselves - everything is transparent. All the logs data have additional trackId and spanId after which we can search in ElasticSearch or through Zipkin.  [Zipkin](http://zipkin.io) is a distributed tracing system where we can find latency problems in our microservices architecture.
+
+
+
+The Bootiful Application, Josh Long
+---------------------
+
+-> {% img center-displayed /images/spring.jpg 'image' 'images' %} <-
+
+Josh Long showed us how easily can we create simple restful application with metrics exposed through some endpoints, JPA/Hibernate, remote shell, Vaadin user interface, Thymeleaf interface and many more features. At certain moments I had a feeling that Spring Framework is taking over the world. You can build initial application with the whole set of dependencies just by checking few checkboxes and clicking button Generate on [start page](start.spring.io).
+
+
+
+DAY 2
+====================
+
+Beyond lambdas - the aftermath, Daniel Sawano & Daniel Deogun
+---------------------
+ 
+It was a really interesting presentation about Java 8 lambdas and streams pitfalls. We could find out how badly we can end using them in the wrong way without sufficient knowledge. Differences between eager Optional.orElse method and lazy version Optional.orElseGet, findFirst method from streams can return nondeterministic result, so we should care about duplicates in the stream. While using parallel streams we still need to think about concurrency and if our code dependencies are thread safe. Especially: watch out for ThreadLocal variables. It’s also necessary to consider stateless vs statefull lambdas for performance matter.
+ 
+ 
+Self-Healing Systems, Viktor Farcic
+---------------------
+ 
+The speaker was talking about pretty standard tools which you should use building microservices architecture and tools to build fully autonomous self-healing systems (divided into 5 layers):
+ 
+* cluster orchestration (docker swarm, kubernetes, mesos)
+* real-time register (zookeeper, etcd, consul)
+* historical registry (elastic search, kibana, logstash)
+* monitoring (nagios, icinga, consul, kibana, zabbix)
+* general orchestration (jenkins)
+ 
+Kubernetes automated blue-green deployments, Paul Bakker
+---------------------
+ 
+-> {% img center-displayed /images/kube.jpg 'image' 'images' %} <-
+
+Paul Bakker speech concerned Kubernetes automation. Basically they build application for docker containers deployments on Kubernetes clusters using Kubernetes REST API. For load balancing inside the cluster configd and haproxy were used. It was really surprising when we realized that speaker was talking about the very same solution as ours, which we put on production last week. Mostly it's UI for developers and some logic to communicate and manage Kubernetes cluster. Amdatu’s solution seemed very nice and I think that we will take some ideas form them :)  
+ 
+ 
+Java and Docker, a good idea?, Christopher Batey
+---------------------
+ 
+Why using Java applications inside docker containers has downsides and complexities? How we can avoid OOM tuning our thread pools, set constraints on CPU and memory - not only for docker containers, but also on Java. Christopher showed us multiple tools for debugging and analysis like jcmd and [jvm-tools](https://github.com/aragozin/jvm-tools). He also recommended using [phusion base docker image](http://phusion.github.io/baseimage-docker/) for base docker image to avoid ‘zombie problem’.
+
+
+
+DAY 3
+====================
+
+JVM dive for mere mortals, Jakub Kubryński
+---------------------
+
+-> {% img center-displayed /images/mem.jpg 'image' 'images' %} <-
+
+Jakub told us a few important for Java developers things about JVM that everyone should know. He gave us a closer look to the way: from source code to running application through byte code, compilation and JIT, cost of using Java 8 features like lambdas and streams, type erasure process and many more.
+ 
+ 
+How to Think, in RxJava, Before Reacting, Praveer Gupta
+---------------------
+
+There was introduction to RxJava and ReactiveX asynchronus API. Some basic stuff about multithreading and operations: filtering, transforming and combining. There were also resilience issues mentioned -  like closing streams gracefully, backup and retrying. I felt strange at the time when speaker asked room that was full of people about using this solution. Maybe 5-10 people put their hands up. I was on most JVM/JAVA conferences that took place in Poland for last 3 years and RxJava was always a hot topic. So why is it so unpopular these days? Maybe the cost of entering this technology is too high. Maybe it’s just a laziness tied with an ease of using old solutions?
+ 
+Moving to G1GC, Kirk Pepperdine
+---------------------
+
+This presentation was about G1 Garbage Collector, which will be default collector in Java 9. Speaker presented us differences between generation type collectors and region based collector (G1). 
+ 
+Parallel GC
+           
+* difficult to tune
+* the bigger the heap, the longer time takes finding all roots for GC
+* scalability problems - pause time tend to be a function of heap size
+* unpredictable
+
+G1 GC
+
+* designed to scale
+* easier to tune (less configuration options)
+* predictable (offer pause time goals)
