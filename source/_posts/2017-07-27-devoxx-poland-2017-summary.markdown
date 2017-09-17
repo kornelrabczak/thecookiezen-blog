@@ -10,7 +10,7 @@ categories: [conferences, devoxx]
 
 -> {% img center-displayed /images/devoxx2017/devoxx.jpg 'Devoxx 2017' 'images' %} <-
                                                                                                                                                                                                                                   
-After a 6 months break I’m back to blogging. I hope that my motivation will stay as high as it was when I was starting with it. My absence was caused by the operation of moving to Berlin, what was pretty occupying*. Now, when the moving is finally done, I can go back on the trail* :)
+After a 6 months break I’m back to blogging. I hope that my motivation will stay as high as it was when I was starting with it. My absence was caused by the operation of moving to Berlin, what was pretty occupying*. Now, when the moving is finally done, I can go back on the trail :)
 
 *After 2 months I still don’t have stable internet connection at home. Don’t ask me why.
 
@@ -57,7 +57,7 @@ Here are some of my thoughts after deliberating over beer with my old friends. I
 
 ##Paweł Barszcz - Kotlin - your 2017 Java replacement
 
--> {% img center-displayed /images/devoxx2017/kotlinlogo.jpg 'Kotlin logo' 'images' %} <-
+-> {% img center-displayed /images/devoxx2017/kotlinlogo.jpg 'Kotlin logo' 'images' %} <br/><sup>JetBrains</sup> <-
 
 Kotlin is a great language, it’s in Tiobe 50 ranking. It’s created and maintained by well known company - JetBreains. The language is something between Java and Scala. It’s for people tired of writing Java boilerplate code. Also for the ones that still have some fears to use Scala because there is a lot of magic around it. Kotlin seems to be a perfect option then. Another good-to-know thing is, that JetBrain lately became the part of the JCP committee. They will certainly bring some fresh and positive influence for future of the Java language.
 
@@ -86,7 +86,7 @@ Jarek’s talks are always controversial. Controversial in a good way. He is not
 
 Arun, who not so long ago joined Amazon, was talking about running Docker containers on a Cloud. He showed us a few interesting examples of how to run different cluster management engines (Docker Swarm, Kubernetes, Mesos and Amazon ECS) on Amazon Cloud. From what I’ve learned, there is a really easy way to set up everything when you know how these things works. You can create new cluster and manage deploying application in fast and secure way. There is only one question: is it still so easy to run and maintain the large number of production clusters?
 
-I need to find some more time to play with Kubernetes. At the last week’s Zalando Tech meetup about Docker,  there was an interesting topic about Kubernetes’ new feature called Ingress. Ingress API is more or less about integration custom load balancing server with Kubernetes clusters. Looks like I already have tens of ideas what to write next blog posts about!
+I need to find some more time to play with Kubernetes. At the last week’s Zalando Tech meetup about Docker,  there was an interesting topic about Kubernetes new feature called Ingress. Ingress API is more or less about integration custom load balancing server with Kubernetes clusters. Looks like I already have tens of ideas what to write next blog posts about!
 
 ##Daniel Rebrero - Applying stability patterns: a case study
 
@@ -115,7 +115,7 @@ Useful patterns from “Release IT” book presented with real life examples:
 
 ##Vaughn Vernon - The Language of Actors
 
--> {% img center-displayed /images/devoxx2017/reactive.jpg 'Reactive Messaging Patterns with the Actor Model' 'images' %} <-
+-> {% img center-displayed /images/devoxx2017/reactive.jpg 'Reactive Messaging Patterns with the Actor Model' 'images' %} <br/><sup>Amazon.com</sup> <-
 
 It was a very nice introduction to the high level concept of actors system. I've already bought Vernon's book “Reactive Messaging Patterns using Actors model” a week before. A lot of things from the first chapter were included in that presentation. Probably more valuable would be going for Vaughn Vernon’s workshops next time. The talk was focused on how actor model can help maintain the system resilience, handle failures and to stay responsive for our application users. He also briefly mentioned Domain Driven Design and how you can connect it with actor concept and messaging pattern as a communication between actors.
 
