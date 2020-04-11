@@ -155,7 +155,7 @@ java -jar target/wildfly-swarm-example-1.0-SNAPSHOT-swarm.jar
 
 and check test url localhost:8080/resources/hello/John
 
-[Full example source code](https://github.com/nikom1337/wildfly-swarm-example)
+[Full example source code](https://github.com/kornelrabczak/wildfly-swarm-example)
 
 Summary
 ---------------------

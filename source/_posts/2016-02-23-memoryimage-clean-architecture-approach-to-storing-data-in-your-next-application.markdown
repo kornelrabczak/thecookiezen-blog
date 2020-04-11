@@ -148,7 +148,7 @@ public class BookResource {
  
 In BookResource class we keep instance of PersistenceController which is responsible for querying and executing command on our Library storage. In *init* method we initialize a controller, in *getByAuthor* we fetch books by specified author and in *create* method new book is stored.
 
-[Full example source code](https://github.com/nikom1337/airomem-example)
+[Full example source code](https://github.com/kornelrabczak/airomem-example)
 
 Conclusion
 ---------------------

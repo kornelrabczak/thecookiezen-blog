@@ -209,7 +209,7 @@ public class HealthCounts {
 }
 {% endcodeblock %}
 
-[Full application source code](http://github.com/nikom1337/simple-circuitbreaker)
+[Full application source code](http://github.com/kornelrabczak/simple-circuitbreaker)
 
 Use case
 ---------------------

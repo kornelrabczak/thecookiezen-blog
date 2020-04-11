@@ -181,4 +181,4 @@ Now we can start multiple WildFly instances (we need to specify IP address for j
 
 and shutdown/restart randomly nodes, that we can observe applications behavior in cluster. Additionally, we have HealthCheck endpoint, which tells its current node a master 200 or slave 410 HTTP response status. We can use this information to configure our load balancer order to direct the whole load traffic only to the master node.
 
-[Full example source code](https://github.com/nikom1337/ha-singleton-service)
+[Full example source code](https://github.com/kornelrabczak/ha-singleton-service)

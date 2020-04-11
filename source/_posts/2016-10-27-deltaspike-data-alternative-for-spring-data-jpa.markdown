@@ -36,7 +36,7 @@ First, we need to add dependency for Payara module.
  
  
  
-An additional configuration is needed for maven-dependency-plugin. You can find pom.xml file at [example repository](https://github.com/nikom1337/payara-delta-spike-data/blob/master/payara-micro/pom.xml).
+An additional configuration is needed for maven-dependency-plugin. You can find pom.xml file at [example repository](https://github.com/kornelrabczak/payara-delta-spike-data/blob/master/payara-micro/pom.xml).
  
 Next, we should create bootstrap class with deployment description. [More details on Payara website.](http://payara.fish)
  

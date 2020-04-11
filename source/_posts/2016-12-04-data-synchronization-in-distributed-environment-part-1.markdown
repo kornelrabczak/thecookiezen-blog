@@ -486,4 +486,4 @@ node-3
 
 As we can see all GET requests are distributed across all the nodes and requests responsible for the resource modification goes only to node-1 which is a leader. In the second part (that is scheduled to be ready by the end of this year), we will focus on replication messages through Apache Kafka.
 
-[Full source code](https://github.com/nikom1337/ha-active-passive-microservices)
+[Full source code](https://github.com/kornelrabczak/ha-active-passive-microservices)

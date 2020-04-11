@@ -16,7 +16,7 @@ categories: [java, jboss, jms, metrics]
 
 We could also create triggers for the purpose of alerting us when there are no consumers for the queue. This could easily end up with queue swelling thousands of messages. We will use Dropwizard Metrics library which is very nice and easy for gathering and measuring data in our application. We will expose this data through REST as JSON. We won't rely on JMX protocol because protocol used for providing data for monitoring should be technology agnostic. While providing data for monitoring system, we should use standard protocol for every technology, in our case, it will be HTTP.
 
-[Full application source code](http://github.com/nikom1337/jms-queue-monitoring)
+[Full application source code](http://github.com/kornelrabczak/jms-queue-monitoring)
 
 Introducing  Metrics
 ---------------------
