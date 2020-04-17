@@ -5,3 +5,9 @@
 ```
 rake new_post["Some Title"]
 ```
+
+## Deplyment
+
+```
+rake deploy
+```
