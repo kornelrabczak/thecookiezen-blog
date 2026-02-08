@@ -9,10 +9,21 @@ footer: true
 
 <img id="portrait" src="/images/about.jpg" alt="portrait" />
 
-Hello, my name is Korneliusz Rabczak, and I’m a Java developer.
+Hello, my name is Korneliusz Rabczak.
 
-Java passionate, clean code evangelist, big fan of Uncle Bob and his clean code video series. Software developer for whom continuous learning (blogs, participation in conferences, code katas, java user group meetings, reading books) and self improvement is a way of life.
+I have 15 years of technical experience in developing and maintaining highly scalable web applications and enterprise systems. I am a Java and Scala enthusiast, a clean code evangelist, and a software developer for whom continuous learning and self-improvement is a way of life.
 
-Strongly interested in new technologies, focused on writing good code using TDD.
+I am strongly interested in new technologies and technical leadership, focused on writing quality code using TDD where it fits best. In my daily work, I have a strong preference for teamwork and collaboration over uncoordinated individual efforts, and I enjoy providing technical consultation and advice to fellow team members.
 
-Writting a blog is my next step in improving myself. I plan to use this blog as an instrument documenting my journey. You’re welcome to follow along, if you’d like. My employment history is on <a href="//pl.linkedin.com/in/kornelrabczak">LinkedIn</a>. If you’d like to say hello, you’re more than welcome to do so at kornel.rabczak[at]thecookiezen.com
+### Current Role
+Currently, I am a **Principal Software Architect at SAP** (since January 2024), working on **SAP Signavio Process Governance**.
+
+In this role, I am responsible for:
+* **Technical Leadership**: Leading cross-functional development teams and driving the technical strategy and vision for the product, ensuring alignment with the business roadmap.
+* **Architecture & Strategy**: Defining architecture characteristics and evolution of the architecture, facilitating workshops to define domains and bounded contexts, and aligning legacy monolith systems with new business purposes.
+* **Innovation**: Adopting new technologies and solutions to improve system performance and scalability.
+* **Advisory**: Providing technical consultation and advising to leadership and business stakeholders to help make high-level decisions.
+
+Writing this blog is an instrument for documenting my journey and sharing what I learn along the way. You’re welcome to follow along!
+
+My full employment history is on [LinkedIn](http://pl.linkedin.com/in/kornelrabczak). If you’d like to say hello, feel free to reach out at kornel.rabczak[at]thecookiezen.com

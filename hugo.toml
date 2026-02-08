@@ -40,11 +40,18 @@ theme = 'loveit'
     title = "GitHub"
   [[menu.main]]
     weight = 6
-    identifier = "twitter"
-    pre = "<i class='fab fa-twitter fa-fw'></i>"
+    identifier = "x"
+    pre = "<i class='fab fa-x-twitter fa-fw'></i>"
     name = ""
-    url = "https://twitter.com/kornelrabczak"
-    title = "Twitter"
+    url = "https://x.com/kornelrabczak"
+    title = "X"
+  [[menu.main]]
+    weight = 7
+    identifier = "youtube"
+    pre = "<i class='fab fa-youtube fa-fw'></i>"
+    name = ""
+    url = "https://www.youtube.com/thecookiezen"
+    title = "YouTube"
 
 [params]
   [params.author]
@@ -58,7 +65,7 @@ theme = 'loveit'
     mobileMode = "auto"
     [params.header.title]
       name = "thecookiezen"
-      pre = "<i class='far fa-kiss-wink-heart fa-fw' aria-hidden='true'></i>"
+      pre = "<i class='fas fa-cookie-bite fa-fw' aria-hidden='true'></i>"
 
   [params.search]
     enable = true
@@ -73,15 +80,15 @@ theme = 'loveit'
   [params.home]
     [params.home.profile]
       enable = true
-      avatarURL = "/images/about.jpg"
+      avatarURL = "/images/logo.jpg"
       title = "Korneliusz Rabczak"
-      subtitle = "Software Engineer & Hugo Enthusiast"
+      subtitle = "Principal Software Architect @ SAP | Java & Scala Enthusiast"
       typeit = true
       social = true
 
   [params.social]
     GitHub = "thecookiezen"
-    X = "thecookiezen"
+    x = "thecookiezen"
     Youtubechannel = "thecookiezen"
     Email = "kornel.rabczak@gmail.com"
     RSS = true
