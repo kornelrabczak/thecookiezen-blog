@@ -1,4 +1,4 @@
-baseURL = 'https://thecookiezen.com/'
+baseURL = 'https://kornelrabczak.github.io/thecookiezen-blog/'
 languageCode = 'en-us'
 title = 'thecookiezen'
 theme = 'loveit'
