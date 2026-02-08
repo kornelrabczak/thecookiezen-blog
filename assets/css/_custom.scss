@@ -1,0 +1,22 @@
+// ==============================
+// Custom style
+// ==============================
+
+.home .home-profile .home-avatar img {
+    width: 20rem; /* Significantly increased from 8rem */
+    border-radius: 2rem; /* Less than 100% to show more of the wide logo */
+}
+
+.home[data-home=posts] .home-avatar img {
+    width: 12rem; /* Increased from 6rem */
+}
+
+#portrait {
+    display: block;
+    margin: 2rem auto;
+    width: 18rem;
+    height: 18rem;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 0 0 .3618em rgba(0, 0, 0, .05);
+}
