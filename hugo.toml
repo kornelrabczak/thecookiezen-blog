@@ -1,0 +1,109 @@
+baseURL = 'https://thecookiezen.com/'
+languageCode = 'en-us'
+title = 'thecookiezen'
+theme = 'loveit'
+
+[author]
+  name = "Korneliusz Rabczak"
+
+[menu]
+  [[menu.main]]
+    weight = 1
+    identifier = "posts"
+    pre = "<i class='fas fa-archive fa-fw'></i>"
+    name = "Posts"
+    url = "/posts/"
+  [[menu.main]]
+    weight = 2
+    identifier = "categories"
+    pre = "<i class='fas fa-th fa-fw'></i>"
+    name = "Categories"
+    url = "/categories/"
+  [[menu.main]]
+    weight = 3
+    identifier = "docs"
+    pre = "<i class='fas fa-book fa-fw'></i>"
+    name = "Docs"
+    url = "/docs/"
+  [[menu.main]]
+    weight = 4
+    identifier = "about"
+    pre = "<i class='fas fa-user fa-fw'></i>"
+    name = "About"
+    url = "/about/"
+  [[menu.main]]
+    weight = 5
+    identifier = "github"
+    pre = "<i class='fab fa-github fa-fw'></i>"
+    name = ""
+    url = "https://github.com/kornelrabczak"
+    title = "GitHub"
+  [[menu.main]]
+    weight = 6
+    identifier = "twitter"
+    pre = "<i class='fab fa-twitter fa-fw'></i>"
+    name = ""
+    url = "https://twitter.com/kornelrabczak"
+    title = "Twitter"
+
+[params]
+  [params.author]
+    name = "Korneliusz Rabczak"
+    email = "kornel.rabczak@gmail.com"
+    link = "https://thecookiezen.com"
+  defaultTheme = "auto"
+
+  [params.header]
+    desktopMode = "fixed"
+    mobileMode = "auto"
+    [params.header.title]
+      name = "thecookiezen"
+      pre = "<i class='far fa-kiss-wink-heart fa-fw' aria-hidden='true'></i>"
+
+  [params.search]
+    enable = true
+    type = "lunr"
+    contentLength = 4000
+    placeholder = ""
+    maxResultLength = 10
+    snippetLength = 30
+    highlightTag = "em"
+    absoluteURL = false
+
+  [params.home]
+    [params.home.profile]
+      enable = true
+      avatarURL = "/images/about.jpg"
+      title = "Korneliusz Rabczak"
+      subtitle = "Software Engineer & Hugo Enthusiast"
+      typeit = true
+      social = true
+
+  [params.social]
+    GitHub = "thecookiezen"
+    X = "thecookiezen"
+    Youtubechannel = "thecookiezen"
+    Email = "kornel.rabczak@gmail.com"
+    RSS = true
+
+  [params.footer]
+    custom = """
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"This website uses cookies to ensure you get the best experience on our website","dismiss":"Got it!","learnMore":"More info","link":"/cookie-policy/","theme":"light-bottom"};
+</script>
+<script type="text/javascript" src="/js/cookieconsent.latest.min.js"></script>
+"""
+
+  [params.cookieconsent]
+    enable = false
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+  page = ["HTML", "MarkDown"]
+  section = ["HTML", "RSS"]
+  taxonomy = ["HTML", "RSS"]
