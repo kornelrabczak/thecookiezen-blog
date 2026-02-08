@@ -1,9 +1,0 @@
----
-layout: page
-title: "404"
-comments: false
-sharing: false
-footer: true
----
-
-Oops! The Page you requested was not found!
