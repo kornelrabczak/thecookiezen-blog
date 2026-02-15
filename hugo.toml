@@ -1,4 +1,4 @@
-baseURL = 'https://kornelrabczak.github.io/thecookiezen-blog/'
+baseURL = 'https://www.thecookiezen.com/'
 canonifyURLs = true
 languageCode = 'en-us'
 title = 'thecookiezen'
