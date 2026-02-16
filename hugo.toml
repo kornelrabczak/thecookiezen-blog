@@ -22,10 +22,10 @@ theme = 'loveit'
     url = "/categories/"
   [[menu.main]]
     weight = 3
-    identifier = "docs"
-    pre = "<i class='fas fa-book fa-fw'></i>"
-    name = "Docs"
-    url = "/docs/"
+    identifier = "projects"
+    pre = "<i class='fas fa-project-diagram fa-fw'></i>"
+    name = "Projects"
+    url = "/projects/"
   [[menu.main]]
     weight = 4
     identifier = "about"
