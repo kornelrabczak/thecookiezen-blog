@@ -29,7 +29,7 @@ I’m excited to get back into the rhythm of writing and building. I’m going i
 Getting back to the metal
 ---------------------
 
-The last three years of my career have been spent in higher-level leadership roles. I love the strategy and people-building aspects of my role, but I’ve felt the need to return to the execution side of things. For 2026, my professional and personal goals are all about engineering.
+For the past three years I've been operating further up the leadership ladder. While I genuinely love the strategy and people-building aspects of my role, I’ve really missed the hands-on execution. For 2026, my professional and personal goals are all about engineering.
 
 - Hands-on building: I want to move closer to technical implementation again. I want to regain the feeling of building things with my team.
 - Open Source: I’ve been a consumer for too long. This year, I’m going to contribute to the projects that make my professional life easier.
