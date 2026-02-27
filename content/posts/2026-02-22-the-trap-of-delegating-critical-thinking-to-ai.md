@@ -51,7 +51,7 @@ If engineers let AI make those structural decisions, they gain speed and lose un
 We can't outsource accountability
 ---------------------
 
-We cannot delegate critical thinking because it is non-transferable and requires accountability.
+Here's the uncomfortable truth: no matter how much AI contributed to a decision, the consequences are always yours.
 
 - If your company's new product strategy fails and company resources are drained, you cannot fire the AI agent.
 - If your system suffers a data breach due to a security vulnerability introduced by AI, GitHub Copilot or Claude will not be held responsible.
