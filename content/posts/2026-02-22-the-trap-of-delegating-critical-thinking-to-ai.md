@@ -46,7 +46,7 @@ The fragile over the frugal architecture
 
 The risk is even more important on the engineering side. It's addicting to watch an LLM generate a complex Kubernetes configuration or design an event-driven architecture in minutes. However, architecture requires a deep understanding of trade-offs. It requires knowing why one option was chosen over another in a specific context. It also requires understanding the failure modes of the system we are building.
 
-If engineers let AI make those structural decisions, they gain speed and lose understanding. They end up building systems that they don't know how to debug and fix. When a production incident occurs at 3 a.m., the LLM won't be there to drive the debugging process and resolve the issue.
+If engineers let AI make those structural decisions, they gain speed and lose understanding. They end up building systems that they don't know how to evolve, debug and fix. When a production incident occurs at 3 a.m., the LLM won't be there to drive the debugging process and resolve the issue.
 
 Broken human connection
 ---------------------
