@@ -30,14 +30,14 @@ In the talk "Model Collapse Ends AI Hype" the author highlights that LLMs are fu
 The belayer and the climber
 ---------------------
 
-Let's think about it this way: AI is the climber. It's strong and fast. It feels it knows everything. It can scale heights that would take a human ten times longer. It can explore different routes up the cliff and find holds that humans might miss. We humans are the belayers. We are anchored to the ground and hold the safety rope. We see the whole picture, monitor the weather conditions, and, most importantly, catch the climber if they slip. 
+Let's think about it this way: AI is the climber. It's strong and fast. It feels it knows everything. It can scale heights that would take a human ten times longer. It can explore different routes up the cliff and find holds that humans might miss. But the belayer chooses the route, reads the conditions, and decides when it's safe to climb. Without the belayer's judgment, even the strongest climber will fall. We humans are the belayers. We are anchored to the ground and hold the safety rope.
 
 The danger is that too many engineers and product managers are letting go of the rope. They tie the safety rope to a loose rock and walk away to do something else while the AI keeps climbing. When we let AI take the lead in vision, design or architecture, we have let go of the rope. We stop being the anchor of critical thinking and start passively following wherever the AI leads.
 
 The death of product vision
 ---------------------
 
-In product management and high-level engineering, critical thinking means the ability to consolidate messy customer data, market insights, and bold CEO bets into a clear vision. When a product manager asks an LLM to define the product vision, they receive a statistical regression. An LLM provides the most probable answer based on its training data, it predicts the most likely next word based on existing data. There is no innovation in it.
+In product management and high-level engineering, critical thinking means the ability to consolidate messy customer data, market insights, and bold CEO bets into a clear vision. When a product manager asks an LLM to define the product vision, they receive the most statistically probable answer based on existing data. There is no innovation in it.
 
 Moreover, when we delegate idea generation to AI, we detach ourselves from the outcome. When challenges arise, we won't have the confidence to fight for the idea because it wasn't ours to begin with. We just follow the AI's output. Real innovation requires a human to passionately work through a problem.
 
@@ -46,7 +46,7 @@ The fragile over the frugal architecture
 
 The risk is even greater on the engineering side. It's addicting to watch an LLM generate a complex Kubernetes configuration or design an event-driven architecture in minutes. However, architecture requires a deep understanding of trade-offs. It requires knowing why one option was chosen over another in a specific context. It also requires understanding the failure modes of the system we are building.
 
-If engineers let AI make those structural decisions, they gain speed and lose understanding. They end up building systems that they don't know how to evolve, debug and fix. When a production incident occurs at 3 a.m., the LLM won't be there to drive the debugging process and resolve the issue.
+If engineers let AI make those structural decisions, they gain speed and lose understanding. They end up building systems that they don't know how to evolve, debug and fix. When something breaks, they won't understand why, because the AI never explained its reasoning, and they never asked.
 
 We can't outsource accountability
 ---------------------
@@ -58,7 +58,7 @@ Here's the uncomfortable truth: no matter how much AI contributed to a decision,
 - If you commit AI-generated code without deeply understanding its logic, the production incident it causes is still yours to fix at 3 a.m.
 - If a pull request you approved introduces a critical bug, it doesn't matter that an AI wrote the code, it's your name on the review.
 
-Ultimately, we are the ones who put our name on the commit, strategic document, product roadmap and quarterly report. If we are responsible for the outcome, then we must also be responsible for the critical decisions that led to it.
+Ultimately, we are the ones who put our name on the commit, strategic document, product roadmap and quarterly report. AI didn't sign up for that responsibility - we did.
 
 Use the tool, don't be used by it
 ---------------------
