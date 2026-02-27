@@ -55,8 +55,8 @@ Here's the uncomfortable truth: no matter how much AI contributed to a decision,
 
 - If your company's new product strategy fails and company resources are drained, you cannot fire the AI agent.
 - If your system suffers a data breach due to a security vulnerability introduced by AI, GitHub Copilot or Claude will not be held responsible.
-- If you commit AI-generated code without deeply understanding its logic, you are building a system that you won't know how to fix.
-- If you aren't accountable for every line of code in that pull request regardless of who wrote it, you've lost control of engineering quality.
+- If you commit AI-generated code without deeply understanding its logic, the production incident it causes is still yours to fix at 3 a.m.
+- If a pull request you approved introduces a critical bug, it doesn't matter that an AI wrote the code, it's your name on the review.
 
 Ultimately, we are the ones who put our name on the commit, strategic document, product roadmap and quarterly report. If we are responsible for the outcome, then we must also be responsible for the critical decisions that led to it.
 
