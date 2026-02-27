@@ -48,13 +48,6 @@ The risk is even more important on the engineering side. It's addicting to watch
 
 If engineers let AI make those structural decisions, they gain speed and lose understanding. They end up building systems that they don't know how to evolve, debug and fix. When a production incident occurs at 3 a.m., the LLM won't be there to drive the debugging process and resolve the issue.
 
-Broken human connection
----------------------
-
-AI doesn't only help with major decisions; it also assists us daily in our work. We're seeing more AI-generated communication, like Slack messages, emails, and comments on documents. While it may feel efficient and save time, it may create a communication barrier.
-
-When I receive a perfectly polished Slack update clearly written by AI, I'm reading words the sender didn't fully process or even care about. There's no personality behind it. Communication in engineering teams is built on trust and authenticity. When we outsource our words to AI, the feedback loses its weight and human connection that makes collaboration work starts to disappear.
-
 We can't outsource accountability
 ---------------------
 
